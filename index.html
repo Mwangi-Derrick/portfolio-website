@@ -1,166 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Derrick's DevFolio</title>
-  <link href="./output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
-</head>
-<body class="text-gray-800 font-sans bg-gray-50">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Derrick's DevFolio</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body class="text-gray-800 font-sans bg-gray-50">
+    <!-- HEADER -->
+    <header
+      class="fixed top-0 left-0 right-0 bg-white shadow-md z-50 h-[60px] flex items-center"
+    >
+      <nav
+        class="mx-auto w-full max-w-[1200px] px-4 flex justify-between items-center"
+      >
+        <a href="/" class="text-xl font-bold text-blue-600">DevFolio</a>
+        <div class="flex gap-4 text-sm font-medium">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Projects</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-  <!-- HEADER -->
-  <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50 h-[60px] flex items-center">
-    <nav class="mx-auto w-full max-w-[1200px] px-4 flex justify-between items-center">
-      <a href="/" class="text-xl font-bold text-blue-600">DevFolio</a>
-      <div class="flex gap-4 text-sm font-medium">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-      </div>
-    </nav>
-  </header>
+    <main class="max-w-[1200px] mx-auto pt-[100px] px-5">
+      <!-- HERO SECTION -->
+      <section class="flex max-md:flex-col items-center justify-between gap-6">
+        <div class="text-4xl font-semibold space-y-2">
+          <p>Hi, 👋</p>
+          <p>I am <span class="text-blue-500">Derrick</span></p>
+          <p>A Web Developer</p>
+        </div>
+        <div class="w-60 h-60 rounded-full overflow-hidden">
+          <img
+            src="../public/web-dev.webp"
+            alt="Web Developer"
+            class="object-cover w-full h-full"
+          />
+        </div>
+      </section>
 
-  <main class="max-w-[1200px] mx-auto pt-[100px] px-5">
+      <!-- ABOUT -->
+      <section class="py-14">
+        <h2 class="text-3xl font-semibold text-blue-500 mb-4">ABOUT ME</h2>
+        <p class="text-lg leading-relaxed">
+          I am a passionate software developer with two years of experience,
+          proficient in both frontend and backend development. I specialize in
+          modern web technologies, including:
+          <br /><br />
+          <strong>Frontend:</strong> HTML, CSS, Tailwind CSS,
+          JavaScript/TypeScript, React.js, and Next.js<br />
+          <strong>Backend:</strong> Node.js, Express.js, and MongoDB
+          <br /><br />
+          Currently, I am pursuing a Bachelor's degree in Electrical and
+          Electronics Engineering at Jomo Kenyatta University of Agriculture and
+          Technology. I enjoy building scalable, efficient applications and
+          continuously expanding my skill set in full-stack development.
+        </p>
+      </section>
 
-    <!-- HERO SECTION -->
-    <section class="flex max-md:flex-col items-center justify-between gap-6">
-      <div class="text-4xl font-semibold space-y-2">
-        <p>Hi, 👋</p>
-        <p>I am <span class="text-blue-500">Derrick</span></p>
-        <p>A Web Developer</p>
-      </div>
-      <div class="w-60 h-60 rounded-full overflow-hidden">
-        <img src="../public/web-dev.webp" alt="Web Developer" class="object-cover w-full h-full" />
-      </div>
-    </section>
+      <!-- TECH STACK -->
+      <section class="py-14 space-y-10">
+        <h3 class="text-3xl font-semibold text-blue-500">TECH STACK</h3>
 
-    <!-- ABOUT -->
-    <section class="py-14">
-      <h2 class="text-3xl font-semibold text-blue-500 mb-4">ABOUT ME</h2>
-      <p class="text-lg leading-relaxed">
-        I am a passionate software developer with two years of experience, proficient in both frontend and backend development. I specialize in modern web technologies, including:
-        <br /><br />
-        <strong>Frontend:</strong> HTML, CSS, Tailwind CSS, JavaScript/TypeScript, React.js, and Next.js<br />
-        <strong>Backend:</strong> Node.js, Express.js, and MongoDB
-        <br /><br />
-        Currently, I am pursuing a Bachelor's degree in Electrical and Electronics Engineering at Jomo Kenyatta University of Agriculture and Technology. I enjoy building scalable, efficient applications and continuously expanding my skill set in full-stack development.
-      </p>
-    </section>
+        <div>
+          <h4 class="text-2xl text-blue-500 font-semibold mb-2">Languages</h4>
+          <div id="languages-container" class="flex flex-wrap gap-4"></div>
+        </div>
 
-    <!-- TECH STACK -->
-    <section class="py-14 space-y-10">
-      <h3 class="text-3xl font-semibold text-blue-500">TECH STACK</h3>
+        <div>
+          <h4 class="text-2xl text-blue-500 font-semibold mb-2">
+            Frameworks, Tools & Libraries
+          </h4>
+          <div id="frameworks-container" class="flex flex-wrap gap-4"></div>
+        </div>
 
-      <div>
-        <h4 class="text-2xl text-blue-500 font-semibold mb-2">Languages</h4>
-        <div id="languages-container" class="flex flex-wrap gap-4"></div>
-      </div>
+        <div>
+          <h4 class="text-2xl text-blue-500 font-semibold mb-2">
+            Hosting, SaaS, DBs, Cloud
+          </h4>
+          <div id="hosting-platforms" class="flex flex-wrap gap-4"></div>
+        </div>
+      </section>
 
-      <div>
-        <h4 class="text-2xl text-blue-500 font-semibold mb-2">Frameworks, Tools & Libraries</h4>
-        <div id="frameworks-container" class="flex flex-wrap gap-4"></div>
-      </div>
+      <!-- PROJECTS -->
+      <section class="py-14">
+        <h3 class="text-3xl text-blue-500 font-semibold mb-6">PROJECTS</h3>
+        <div id="projects" class="flex flex-col gap-10"></div>
+      </section>
+    </main>
 
-      <div>
-        <h4 class="text-2xl text-blue-500 font-semibold mb-2">Hosting, SaaS, DBs, Cloud</h4>
-        <div id="hosting-platforms" class="flex flex-wrap gap-4"></div>
-      </div>
-    </section>
+    <!-- SCRIPT -->
+    <script>
+      const languages = [
+        {
+          name: "JavaScript",
+          icon: '<i class="devicon-javascript-plain colored text-2xl"></i>',
+        },
+        {
+          name: "TypeScript",
+          icon: '<i class="devicon-typescript-plain colored text-2xl"></i>',
+        },
+        {
+          name: "Python",
+          icon: '<i class="devicon-python-plain colored text-2xl"></i>',
+        },
+        {
+          name: "Dart",
+          icon: '<i class="devicon-dart-plain colored text-2xl"></i>',
+        },
+      ];
 
-    <!-- PROJECTS -->
-    <section class="py-14">
-      <h3 class="text-3xl text-blue-500 font-semibold mb-6">PROJECTS</h3>
-      <div id="projects" class="flex flex-col gap-10"></div>
-    </section>
-  </main>
+      const frameworks = [
+        {
+          name: "React.js",
+          icon: '<i class="devicon-react-original colored text-2xl"></i>',
+        },
+        {
+          name: "Node.js",
+          icon: '<i class="devicon-nodejs-plain colored text-2xl"></i>',
+        },
+        {
+          name: "Next.js",
+          icon: '<i class="devicon-nextjs-original text-2xl"></i>',
+        },
+        {
+          name: "Tailwind CSS",
+          icon: '<i class="devicon-tailwindcss-plain colored text-2xl"></i>',
+        },
+        {
+          name: "Express.js",
+          icon: '<i class="devicon-express-original text-2xl"></i>',
+        },
+        {
+          name: "tRPC",
+          icon: '<i class="devicon-trpc-plain colored text-2xl"></i>',
+        },
+      ];
 
-  <!-- SCRIPT -->
-  <script>
-    const languages = [
-      { name: "JavaScript", icon: '<i class="devicon-javascript-plain colored text-2xl"></i>' },
-      { name: "TypeScript", icon: '<i class="devicon-typescript-plain colored text-2xl"></i>' },
-      { name: "Python", icon: '<i class="devicon-python-plain colored text-2xl"></i>' },
-      { name: "Dart", icon: '<i class="devicon-dart-plain colored text-2xl"></i>' },
-    ];
+      const cloudServices = [
+        {
+          name: "Firebase",
+          icon: '<i class="devicon-firebase-plain colored text-2xl"></i>',
+        },
+        {
+          name: "MongoDB",
+          icon: '<i class="devicon-mongodb-plain colored text-2xl"></i>',
+        },
+        {
+          name: "PostgreSQL",
+          icon: '<i class="devicon-postgresql-plain colored text-2xl"></i>',
+        },
+        {
+          name: "Vercel",
+          icon: '<i class="devicon-vercel-original text-2xl"></i>',
+        },
+        {
+          name: "Google Cloud",
+          icon: '<i class="devicon-googlecloud-plain colored text-2xl"></i>',
+        },
+      ];
 
-    const frameworks = [
-      { name: "React.js", icon: '<i class="devicon-react-original colored text-2xl"></i>' },
-      { name: "Node.js", icon: '<i class="devicon-nodejs-plain colored text-2xl"></i>' },
-      { name: "Next.js", icon: '<i class="devicon-nextjs-original text-2xl"></i>' },
-      { name: "Tailwind CSS", icon: '<i class="devicon-tailwindcss-plain colored text-2xl"></i>' },
-      { name: "Express.js", icon: '<i class="devicon-express-original text-2xl"></i>' },
-      { name: "tRPC", icon: '<i class="devicon-trpc-plain colored text-2xl"></i>' }
-    ];
-
-    const cloudServices = [
-      { name: "Firebase", icon: '<i class="devicon-firebase-plain colored text-2xl"></i>' },
-      { name: "MongoDB", icon: '<i class="devicon-mongodb-plain colored text-2xl"></i>' },
-      { name: "PostgreSQL", icon: '<i class="devicon-postgresql-plain colored text-2xl"></i>' },
-      { name: "Vercel", icon: '<i class="devicon-vercel-original text-2xl"></i>' },
-      { name: "Google Cloud", icon: '<i class="devicon-googlecloud-plain colored text-2xl"></i>' }
-    ];
-
-    const renderIcons = (containerId, items) => {
-      const container = document.getElementById(containerId);
-      container.innerHTML = items.map(item => `
+      const renderIcons = (containerId, items) => {
+        const container = document.getElementById(containerId);
+        container.innerHTML = items
+          .map(
+            (item) => `
         <div class="flex items-center gap-2 bg-white px-3 py-2 rounded shadow-sm">
           ${item.icon}
           <span class="text-sm">${item.name}</span>
         </div>
-      `).join("");
-    };
+      `
+          )
+          .join("");
+      };
 
-    renderIcons("languages-container", languages);
-    renderIcons("frameworks-container", frameworks);
-    renderIcons("hosting-platforms", cloudServices);
+      renderIcons("languages-container", languages);
+      renderIcons("frameworks-container", frameworks);
+      renderIcons("hosting-platforms", cloudServices);
 
-    const projects = [
-      {
-        name: "Filmverse",
-        image: "../public/filmverse.png",
-        technologies: ["React JS", "Next JS", "Tailwind CSS", "TMDB API"],
-        liveUrl: "https://filmverse-six.vercel.app",
-        githubUrl: "https://github.com/Mwangi-Derrick/Filmverse"
-      },
-      {
-        name: "Nexmall",
-        image: "../public/nexmall.png",
-        technologies: ["React JS", "Next JS", "Tailwind CSS", "Redux", "Mongo DB", "Daraja API"],
-        liveUrl: "",
-        githubUrl: "https://github.com/Mwangi-Derrick/nexmall-backend"
-      },
-      {
-        name: "Nexmall Admin Dashboard",
-        image: "../public/nexmall-admin.png",
-        technologies: ["React JS", "TypeScript", "Next JS", "Tailwind CSS", "Mongo DB"],
-        liveUrl: "",
-        githubUrl: "https://github.com/Mwangi-Derrick/nexmall-backend"
-      }
-    ];
+      const projects = [
+        {
+          name: "Filmverse",
+          image: "../public/filmverse.png",
+          technologies: ["React JS", "Next JS", "Tailwind CSS", "TMDB API"],
+          liveUrl: "https://filmverse-six.vercel.app",
+          githubUrl: "https://github.com/Mwangi-Derrick/Filmverse",
+        },
+        {
+          name: "Nexmall",
+          image: "../public/nexmall.png",
+          technologies: [
+            "React JS",
+            "Next JS",
+            "Tailwind CSS",
+            "Redux",
+            "Mongo DB",
+            "Daraja API",
+          ],
+          liveUrl: "",
+          githubUrl: "https://github.com/Mwangi-Derrick/nexmall-backend",
+        },
+        {
+          name: "Nexmall Admin Dashboard",
+          image: "../public/nexmall-admin.png",
+          technologies: [
+            "React JS",
+            "TypeScript",
+            "Next JS",
+            "Tailwind CSS",
+            "Mongo DB",
+          ],
+          liveUrl: "",
+          githubUrl: "https://github.com/Mwangi-Derrick/nexmall-backend",
+        },
+      ];
 
-    const projectSection = document.getElementById("projects");
-    projectSection.innerHTML = projects.map(project => `
-      <div class="flex flex-col md:flex-row gap-6">
-        <div class="md:w-1/2 w-full h-[300px] overflow-hidden rounded shadow-md">
-          <img src="${project.image}" alt="${project.name}" class="object-cover w-full h-full"/>
-        </div>
+      const projectSection = document.getElementById("projects");
+      projectSection.innerHTML = projects
+        .map(
+          (project) => `
+      <div class="flex max-md:flex-col gap-6">
+       <div class="md:w-1/2 w-full aspect-video overflow-hidden rounded shadow-md">
+  <img src="${project.image}" alt="${
+            project.name
+          }" class="object-contain w-full h-full"/>
+</div>
         <div class="flex flex-col justify-start gap-4 flex-1">
           <p class="text-xl font-bold">${project.name}</p>
           <ul class="flex flex-wrap gap-2">
-            ${project.technologies.map(tech => `
+            ${project.technologies
+              .map(
+                (tech) => `
               <li class="bg-blue-100 text-blue-700 px-2 py-1 rounded text-sm">${tech}</li>
-            `).join("")}
+            `
+              )
+              .join("")}
           </ul>
           <div class="flex gap-3 mt-2">
-            ${project.liveUrl ? `<a href="${project.liveUrl}" target="_blank" class="text-blue-600 hover:underline">Live Site</a>` : ''}
-            <a href="${project.githubUrl}" target="_blank" class="text-gray-600 hover:underline">GitHub</a>
+            ${
+              project.liveUrl
+                ? `<a href="${project.liveUrl}" target="_blank" class="text-blue-600 hover:underline">Live Site</a>`
+                : ""
+            }
+            <a href="${
+              project.githubUrl
+            }" target="_blank" class="text-gray-600 hover:underline">GitHub</a>
           </div>
         </div>
       </div>
-    `).join("");
-  </script>
-</body>
+    `
+        )
+        .join("");
+    </script>
+  </body>
 </html>
